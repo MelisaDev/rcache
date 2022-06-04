@@ -1,0 +1,13 @@
+# IDE Configuration files
+.idea
+.vscode
+.vs
+
+*.py[dcw]
+__pycache__
+.env
+Pipfile.lock
+target
+
+# IDE Ext's
+.history/

@@ -1,0 +1,20 @@
+[package]
+name = "melisa_rcache"
+version = "0.0.1"
+edition = "2021"
+authors = ["Marakarka"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "melisa_rcache"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.16.3", features = ["extension-module"] }
+
+[dependencies.pyo3-asyncio]
+version = "0.16.0"
+features = ["tokio-runtime"]
+
+[dependencies.tokio]
+version = "1"
